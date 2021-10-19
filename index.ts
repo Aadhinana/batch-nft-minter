@@ -16,12 +16,12 @@ async function main() {
   const bytes = bs58.decode(process.env.PRIVATE_KEY!)
   const account = web3.Keypair.fromSecretKey(bytes)
 
-  var fromAirdropSignature = await connection.requestAirdrop(
-    account.publicKey,
-    web3.LAMPORTS_PER_SOL,
-  );
-  // Wait for airdrop confirmation
-  await connection.confirmTransaction(fromAirdropSignature);
+  // var fromAirdropSignature = await connection.requestAirdrop(
+  //   account.publicKey,
+  //   web3.LAMPORTS_PER_SOL/100000,
+  // );
+  // // Wait for airdrop confirmation
+  // await connection.confirmTransaction(fromAirdropSignature);
 
 
   const nftMint = await Token.createMint(
@@ -42,21 +42,22 @@ async function main() {
     nftAccountInfo.address,
     account.publicKey,
     [account],
-    100
+    1
   )
 
   // Add metadata
 
   const metadataTx = new web3.Transaction()
+  console.log(metadataTx)
   const creator = new Creator({
     address: account.publicKey.toString(),
     verified: true,
     share: 100,
   })
   const metadata = new Data({
-    name: 'Cyclos Golden Ticket',
-    symbol: 'CYSGT',
-    uri: 'https://raw.githubusercontent.com/cyclos-io/batch-nft-minter/master/metadata.json',
+    name: 'Probably nothing',
+    symbol: 'PBNT',
+    uri: 'https://github.com/Aadhinana/batch-nft-minter/blob/master/metadata.json',
     sellerFeeBasisPoints: 0,
     creators: [creator],
   })
