@@ -55,8 +55,8 @@ async function main() {
     share: 100,
   })
   const metadata = new Data({
-    name: 'Probably nothing',
-    symbol: 'PBNT',
+    name: 'Nothing',
+    symbol: 'NTNG',
     uri: 'https://github.com/Aadhinana/batch-nft-minter/blob/master/metadata.json',
     sellerFeeBasisPoints: 0,
     creators: [creator],
