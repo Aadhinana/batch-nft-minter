@@ -1,10 +1,10 @@
 {
     "id": "1",
-    "name": "Cyclos Golden Ticket",
-    "image": "https://images.dontbuymeme.com/collections/badger/static/hodl.jpg",
-    "animation_url": "https://images.dontbuymeme.com/collections/badger/mp4/hodl.mp4",
-    "external_url": "https://www.cyclos.io/",
-    "description": "Access ticket for the Cyclos private launch",
+    "name": "Testing out waters",
+    "image": "https://i.giphy.com/media/2D8g2rXcWx1DO/giphy.webp",
+    "animation_url": "https://media.giphy.com/media/2D8g2rXcWx1DO/giphy.gif",
+    "external_url": "https://example.com/",
+    "description": "Probably nothing!",
     "attributes": [
         {
             "trait_type": "Tier",
