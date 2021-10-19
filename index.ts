@@ -57,7 +57,7 @@ async function main() {
   const metadata = new Data({
     name: 'Nothing',
     symbol: 'NTNG',
-    uri: 'https://github.com/Aadhinana/batch-nft-minter/blob/master/metadata.json',
+    uri: 'https://raw.github.com/Aadhinana/batch-nft-minter/blob/master/metadata.json',
     sellerFeeBasisPoints: 0,
     creators: [creator],
   })
