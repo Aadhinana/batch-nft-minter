@@ -10,7 +10,7 @@ extendBorsh()
 
 async function main() {
   const connection = new web3.Connection(
-    web3.clusterApiUrl('devnet')
+    web3.clusterApiUrl('mainnet-beta')
   );
 
   const bytes = bs58.decode(process.env.PRIVATE_KEY!)
@@ -48,7 +48,6 @@ async function main() {
   // Add metadata
 
   const metadataTx = new web3.Transaction()
-  console.log(metadataTx)
   const creator = new Creator({
     address: account.publicKey.toString(),
     verified: true,
